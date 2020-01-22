@@ -1,0 +1,204 @@
+body {
+  padding: 20px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#heading{
+	padding: 1px; 
+	text-align: center;
+	background-color : rgb(219, 217, 217);
+	font-size: 30px;
+	font-weight: bold;
+	height:120px;
+	margin: auto;
+	font-family:  Arial, sans-serif;
+}
+
+#function{
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 10px;
+	column-count: 4;
+}
+
+.bt{
+	margin:2px;
+	float: left;
+    height: 30px;
+	color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    width:80%;
+}
+
+#bt3{
+	border:none;
+	background-color: transparent;
+	width:20%;
+	margin-left:60%;
+}
+
+#bt4{
+	border:none;
+	background-color: transparent;
+	width:20%;
+	margin-left:100px;
+}
+
+
+#email{
+	margin-top:30px;
+	margin-left:40px;
+	width: 70%;
+	display: inline-block;
+}
+
+
+.entry{
+	margin-bottom: 40px;
+	margin-top:10px;
+	width: 100%;
+	border:0.5px solid black;
+	column-count: 4;
+	padding-top:10px;
+	-webkit-transition: width 2s; 
+	transition: width 2s;
+	height:40px;
+}
+
+.entry:hover{
+	background-color: rgb(231, 229, 229);
+}
+
+.checkbox,.er,.title,.time{
+	width: 100%;
+	float: left;
+	margin-left:2px;
+	margin-right:2px;
+	padding-right: 0px;
+	padding-left:0px;
+	text-align: center;
+	height: 40px;
+	overflow: hidden;
+
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+}
+
+.checkbox{
+	width:10%;
+	height: 15px;
+	margin-right: 5%;
+	margin-bottom: 10px;
+}
+
+.er{
+	font-weight: bold;
+}
+
+.time{
+	color:slategray;
+}
+
+.title{
+	font-style:italic;
+}
+
+#mailbox{
+	margin-top:20px;
+	font-size:x-large;
+	width:20%;
+	float:left;
+	font-weight: bold;
+	color: rgb(114, 113, 113);
+	border: 5px dashed silver;
+}
+
+
+#Inbox{
+	color: black;
+}
+
+.box{
+	text-align:center;
+}
+
+#title1{
+	font-size: 24px;
+	font-weight: bold;
+	font-family:  Arial, sans-serif;
+	display: inline-block;
+}
+
+#time1{
+	float:right;
+	color:slategray;
+}
+
+#sender1{
+	margin-right: 80%;
+	margin-top:10px;
+	float: none;
+}
+
+#recipient1{
+	width:100%;
+	margin-top: 5px;
+}
+
+#content1{
+	margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 780px){
+	.bt{
+		font-size: 14px;
+	}
+
+@media only screen and (max-width: 600px){
+	#heading{
+		height: auto;
+		font-size: 20px;
+	}
+	#function{
+		column-count: 1;
+	}
+	#bt3{
+		margin-left:0px;
+		display: inline-block;
+	}
+	#bt4{
+		margin-left:0px;
+	}
+
+	#bt1,#bt2{
+		width:40%;
+	}
+	#mailbox{
+		width:160px;
+		float:left;
+	}
+	#email{
+		margin-left:20px;
+		width:90%;
+		float:none;
+		height: auto;
+	}
+
+	.entry{
+		column-count: 1;
+		height:auto;
+	}
+	.checkbox,.er,.title,.time{
+		width:90%;
+		height:auto;
+	}
+
+	#time1{
+		float:none;
+	}
+}
+}

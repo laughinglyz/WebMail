@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Email System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+</head>
+
+<body onload="loadinbox()">
+	<div id="heading">
+		<h1>Email System</h1>
+	</div>
+
+	<div id="function">
+		<button class="bt" id="bt1" onclick="Compose()">Compose</button>
+		<select class="bt" id="bt2" onchange="moveto(this)"></select>
+		<button class="bt" id="bt3" onclick="before()"></button>
+		<button class="bt" id="bt4" onclick="next()">></button>
+	</div>
+
+	<div id="mailbox">
+		<p id="Inbox" class="box" onclick=loadinbox()>Inbox</p>
+		<p id="Important" class="box" onclick=loadimportant()>Important</p>
+		<p id="Sent" class="box" onclick=loadsent()>Sent</p>
+		<p id="Trash" class="box" onclick=loadtrash()>Trash</p>
+	</div>
+
+
+	<div id="email">
+
+	</div>
+	<script src="./javascripts/script.js" type="text/javascript"></script>
+</body>
+
+</html>
